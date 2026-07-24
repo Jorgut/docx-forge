@@ -1,5 +1,10 @@
 # docx-forge
 
+[![skills.sh](https://img.shields.io/badge/skills.sh-Jorgut/docx--forge-8A2BE2?style=flat-square)](https://skills.sh/Jorgut/docx-forge)
+[![Install with npx](https://img.shields.io/badge/npx%20skills%20add-Jorgut%2Fdocx--forge-000?style=flat-square)](https://github.com/Jorgut/docx-forge)
+![License](https://img.shields.io/github/license/Jorgut/docx-forge?style=flat-square)
+![Agent Skill](https://img.shields.io/badge/Agent%20Skill-Document%20Engineering-2EA44F?style=flat-square)
+
 **Professional Word document engineering — create, edit, and analyze .docx files.**
 
 A comprehensive reference for generating Word documents programmatically, editing existing documents via XML, and mastering OOXML features like tracked changes, comments, tables, images, and multi-column layouts.
@@ -73,6 +78,12 @@ Packer.toBuffer(doc).then(buffer => {
 - **pandoc** — document reading/conversion
 - **LibreOffice** — format bridging, PDF output
 - **Poppler** — `pdftoppm` for page rendering
+
+## Install
+
+```bash
+npx skills add Jorgut/docx-forge
+```
 
 ## License
 
