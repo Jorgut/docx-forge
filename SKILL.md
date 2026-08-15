@@ -40,7 +40,7 @@ pdftoppm -jpeg -r 150 document.pdf page
 
 ## Creating New Documents
 
-Generate `.docx` files with JavaScript. Install: `npm install -g docx`
+Generate `.docx` files with JavaScript. Install the package in the working project: `npm install docx`
 
 ### Setup
 
@@ -551,7 +551,7 @@ For replies, nest markers:
 
 ## Dependencies
 
-- **Node.js** — docx package: `npm install -g docx`
+- **Node.js** — docx package: `npm install docx`
 - **pandoc** — document reading and conversion
 - **LibreOffice** — PDF conversion and format bridging
 - **Poppler** — `pdftoppm` for rendering pages as images

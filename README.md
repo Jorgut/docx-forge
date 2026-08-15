@@ -38,8 +38,10 @@ Complete XML patterns for:
 
 ## Quick Start
 
+Install project dependencies in the repository you are working from. The npm package is named `docx`; this skill is named `docx-forge`.
+
 ```bash
-npm install -g docx
+npm install docx
 ```
 
 Create a document:
@@ -61,6 +63,18 @@ Packer.toBuffer(doc).then(buffer => {
 });
 ```
 
+Ask an agent to use the skill:
+
+```text
+Use docx-forge to create a client-ready Word proposal with tracked-change notes and a table of contents.
+```
+
+For an existing document:
+
+```text
+Use docx-forge to inspect this .docx, summarize its styles, and propose safe XML edits before changing anything.
+```
+
 ## When to Use Which Approach
 
 | You want to... | Use |
@@ -74,10 +88,20 @@ Packer.toBuffer(doc).then(buffer => {
 
 ## Dependencies
 
-- **Node.js** — `docx` package (npm)
-- **pandoc** — document reading/conversion
-- **LibreOffice** — format bridging, PDF output
-- **Poppler** — `pdftoppm` for page rendering
+- **Node.js** — required for generation with the `docx` npm package
+- **pandoc** — optional, useful for document reading and conversion
+- **LibreOffice** — optional, useful for format bridging and PDF output
+- **Poppler** — optional, useful for `pdftoppm` page rendering
+
+## Verification
+
+Before handing off a generated `.docx`, check:
+
+- the file opens in Word or LibreOffice
+- headings and lists use real Word structures, not plain styled text
+- tables fit the page width
+- tracked changes and comments appear under the intended author
+- exported PDF pages match the expected pagination
 
 ## Install
 
